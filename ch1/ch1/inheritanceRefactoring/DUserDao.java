@@ -12,7 +12,7 @@ public class DUserDao extends UserDao3{
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/springbook","root","pdw06135@");
+        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/springbook","root","root");
 
         return c;
     }
