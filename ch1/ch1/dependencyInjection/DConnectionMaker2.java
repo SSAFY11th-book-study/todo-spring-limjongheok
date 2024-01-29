@@ -13,7 +13,7 @@ public class DConnectionMaker2 implements ConnectionMaker2{
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/springbook","root","pdw06135@");
+        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/springbook","root","root");
 
         return c;
     }
