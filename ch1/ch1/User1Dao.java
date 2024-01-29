@@ -11,7 +11,7 @@ public class User1Dao {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/springbook","root","pdw06135@");
+        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/springbook","root","root");
 
         PreparedStatement ps = c.prepareStatement("insert into users(id,name,password) values(?,?,?)");
         ps.setString(1,user1.getId());
@@ -26,7 +26,7 @@ public class User1Dao {
     // read user
     public User1 get(String id) throws ClassNotFoundException, SQLException{
         Class.forName("com.mysql.jdbc.Driver");
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost/springbook","root","pdw06135@");
+        Connection c = DriverManager.getConnection("jdbc:mysql://localhost/springbook","root","root");
 
         PreparedStatement ps = c.prepareStatement("select * from users where id = ?");
         ps.setString(1,id);
