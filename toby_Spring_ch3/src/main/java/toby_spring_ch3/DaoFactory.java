@@ -1,4 +1,4 @@
-package toby_spring_ch2.toby_spring_ch2.beanFactory;
+package toby_spring_ch3;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -6,13 +6,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DaoFactory {
 
-   @Bean
+    @Bean
     public UserDao userDao(){
-       return new UserDao(connectionMaker());
-   }
-
-   @Bean
-    public ConnectionMaker connectionMaker() {
-       return new DConnectionMaker();
+        UserDao userDao = new UserDao();
+        userDao.setConnectionMaker(connectionMaker());
+        return userDao;
     }
+    @Bean
+    public ConnectionMaker connectionMaker() {
+        return new DConnectionMaker();
+    }
+
 }

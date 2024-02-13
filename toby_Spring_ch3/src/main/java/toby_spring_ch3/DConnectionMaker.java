@@ -1,4 +1,4 @@
-package toby_spring_ch2.toby_spring_ch2.beanFactory;
+package toby_spring_ch3;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,7 +12,7 @@ public class DConnectionMaker implements ConnectionMaker{
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/springbook","root","pdw06135@");
+        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/springbook","root","root");
 
         return c;
     }

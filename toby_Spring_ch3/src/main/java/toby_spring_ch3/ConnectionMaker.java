@@ -1,4 +1,4 @@
-package ch2.factory;
+package toby_spring_ch3;
 
 import java.sql.Connection;
 import java.sql.SQLException;
