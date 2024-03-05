@@ -1,7 +1,6 @@
 package com.example.toby_spring_ch5;
 
 
-import com.example.toby_spring_ch5.toby_spring_ch5.Service;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -10,11 +9,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import java.util.Set;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.Matchers.*;
 
 
 @ExtendWith(SpringExtension.class)

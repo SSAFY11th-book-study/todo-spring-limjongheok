@@ -1,4 +1,4 @@
-package com.example.toby_spring_ch5.toby_spring_ch5;
+package com.example.toby_spring_ch5.toby_spring_ch6;
 
 import java.sql.Connection;
 import java.sql.SQLException;

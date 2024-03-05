@@ -1,4 +1,4 @@
-package com.example.toby_spring_ch5.toby_spring_ch5;
+package com.example.toby_spring_ch5.toby_spring_ch6;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
